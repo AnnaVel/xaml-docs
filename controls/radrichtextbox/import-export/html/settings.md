@@ -82,7 +82,6 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
     htmlExportSettings.PropertiesToIgnore["td"].Add("padding");
     htmlExportSettings.PropertiesToIgnore["td"].Add("vertical-align");
 {{endregion}}
-
 >In order to achieve best compatibility of the generated HTML with __Telerik Reporting__, you should apply the following settings:  
 >* __DocumentExportLevel__: Fragment;  
 >* __StylesExportMode__: Inline;
@@ -102,7 +101,7 @@ __HtmlFormatProvider__ exposes __ExportSettings__, which allow you to control th
 	htmlExportSettings.SpanExportMode = SpanExportMode.AlwaysExport;
 	
 	HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
-	HtmlFormatProvider.ExportSettings = htmlExportSettings;
+	htmlFormatProvider.ExportSettings = htmlExportSettings;
 {{endregion}}
 
 ## Import Settings
@@ -128,7 +127,7 @@ __HtmlFormatProvider__ exposes __ImportSettings__, which allow you to control th
 	htmlImportSettings.UseDefaultStylesheetForFontProperties = true;	
 	
 	HtmlFormatProvider htmlFormatProvider = new HtmlFormatProvider();
-	HtmlFormatProvider.ImportSettings = htmlImportSettings;
+	htmlFormatProvider.ImportSettings = htmlImportSettings;
 {{endregion}}
 
 ## See Also
