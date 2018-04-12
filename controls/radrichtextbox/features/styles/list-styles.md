@@ -84,7 +84,6 @@ The class, which contains the structure corresponding to the list level is **Lis
 * **Style**: Specifies the **ListStyle**.
 * **Document**: Reference to the owner [RadDocument](https://docs.telerik.com/devtools/wpf/api/html/t_telerik_windows_documents_model_raddocument.htm).
 
-
 ## List Manager Overview
 
 [ListManager](https://docs.telerik.com/devtools/wpf/api/html/T_Telerik_Windows_Documents_Lists_ListManager.htm) is the structure holding all ListStyles and DocumentLists. Can be accessed through **RadDocument’s ListManager** property.
@@ -151,7 +150,7 @@ Initially, the list doesn’t have any associated list levels. The possible list
 	for (int levelIndex = 0; levelIndex < 9; levelIndex++)
 	{
 	    ListLevelStyle listLevel = new ListLevelStyle();
-	    list.Levels.Add(levelIndex);
+	    list.Levels.Add(listLevel);
 	}
 {{endregion}}
 
